@@ -34,7 +34,7 @@
 (defun spacemacs//layout-wait-for-modeline (&rest _)
   "Assure the mode-line is loaded before restoring the layouts."
   (advice-remove 'persp-load-state-from-file 'spacemacs//layout-wait-for-modeline)
-  (require 'spaceline-config))
+  (require 'doom-modeline))
 
 (defun spacemacs//current-layout-name ()
   "Get name of the current perspective."
