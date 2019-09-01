@@ -191,7 +191,7 @@ ask the user if a new layout should be created."
   "Rename a layout and get back to the perspectives transient-state."
   (interactive)
   (call-interactively 'persp-rename)
-  (spacemacs/layouts-transient-state/body))
+  (hydra-persp/body))
 
 (defun spacemacs/layouts-ts-close ()
   "Kill current perspective"
@@ -201,7 +201,7 @@ ask the user if a new layout should be created."
 (defun spacemacs/layouts-ts-close-other ()
   (interactive)
   (call-interactively 'spacemacs/helm-persp-close)
-  (spacemacs/layouts-transient-state/body))
+  (hydra-persp/body))
 
 (defun spacemacs/layouts-ts-kill ()
   "Kill current perspective"
@@ -211,7 +211,7 @@ ask the user if a new layout should be created."
 (defun spacemacs/layouts-ts-kill-other ()
   (interactive)
   (call-interactively 'spacemacs/helm-persp-kill)
-  (spacemacs/layouts-transient-state/body))
+  (hydra-persp/body))
 
 (defun spacemacs/move-element-left (element list)
   "Move ELEMENT one step to the left in LIST."
